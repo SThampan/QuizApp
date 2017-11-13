@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Physics Quiz</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div  	class="container">
+		<h1> A Short Quiz on Physics</h1>
+	
+	<div class="summary">
+		<span class="statistics"></span>
+		<span class="results"></span>
+	</div>
+	<form   id="js-quiz-form">
+		<div class="hidden question-div" id="questionList">
+		<p class="question-current">
+		</p>
+		<div class="checkOption">
+		<input type="radio" name="answers"  value="A" id="option-A">
+		<label id="optionA" for="option-A"></label>
+		</div>
+		<div class="checkOption">
+		<input type="radio" name="answers"  value="B" id="option-B">
+		<label id="optionB" for="option-B"></label>
+		</div>
+		<div class="checkOption">
+		<input type="radio" name="answers" value="C"  id="option-C">
+		<label id="optionC" for="option-C"></label>
+		</div>
+		<div class="checkOption">
+		<input type="radio" name="answers" value="D"  id="option-D">
+		<label id="optionD" for="option-D"></label>
+		</div>
+		<div class="checkOption">
+		<input type="radio" name="answers" value="E"  id="option-E">
+		<label id="optionE" for="option-E"></label>
+		</div>
+		<p class="message"></p>
+
+	 </div>
+	 <div class="js-nav">
+		<button class="button-submit-answer" type='submit'>Submit</button>
+		<button id="js-button-next-question" class="button-next-question hidden" >Next</button>
+		<button id="js-button-last-question" class="button-last-question hidden" >Finish</button>
+	</div>
+	
+	<div id="js-results-page" class="hidden">
+	 <p class="js-results"></p>
+	 <p class="js-correct"></p>
+	 <p class="js-wrong"></p>
+	</div>
+	 <button id="js-button-retry" class="button-retry-quiz hidden" >Retake Quiz</button>
+	 
+</form>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
